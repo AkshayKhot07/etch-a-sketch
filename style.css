@@ -1,0 +1,33 @@
+.main-container {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  border: 3px solid rgb(129, 129, 129);
+}
+
+.single-div {
+  background-color: white;
+  border-top: 1px solid rgb(155, 154, 154);
+  border-bottom: 1px solid rgb(155, 154, 154);
+
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.main-container > div:nth-child(odd) {
+  border-bottom: none;
+  border-top: none;
+}
+
+.main-container > div:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.main-container > div:first-child {
+  border-top: none;
+}
+
+.single-div > div {
+  background-color: aqua;
+  border: 1px solid black;
+}
