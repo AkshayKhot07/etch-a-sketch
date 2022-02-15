@@ -8,7 +8,48 @@
     <title>Etch-A-Sketch</title>
   </head>
   <body>
-    <div class="main-container"></div>
+    <h1>Etch-A-Sketch</h1>
+    <div class="container">
+      <div class="tools-conatiner">
+        <div class="color-picker">
+          <input type="color" id="pickColor" name="pickColor" />
+          <label for="pickColor"> Pick Color</label>
+        </div>
+        <div class="grid-range-container">
+          <input id="grid-input" type="range" min="1" max="60" step="1" />
+          <div class="grid-desc">Grid size: 31 x 31</div>
+        </div>
+        <div class="rainbow-container">
+          <input
+            type="button"
+            value="Toggle Rainbow"
+            id="rainbowBtn"
+            class="rainbowBtn"
+          />
+        </div>
+        <div class="clear-container">
+          <input
+            type="button"
+            value="Eraser"
+            id="eraserBtn"
+            class="eraserBtn"
+          />
+        </div>
+        <div class="gridline-container">
+          <input
+            type="button"
+            value="Toggle Girdline"
+            id="gridlineBtn"
+            class="gridlineBtn toggleBtn"
+          />
+        </div>
+        <div class="clear-container">
+          <input type="button" value="Clear" id="clearBtn" class="clear-btn" />
+        </div>
+      </div>
+      <div class="main-container"></div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>

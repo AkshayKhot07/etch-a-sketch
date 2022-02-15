@@ -1,33 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Festive&family=Moo+Lah+Lah&family=Poppins:wght@300&family=Roboto:wght@100&family=Rock+Salt&family=VT323&display=swap");
+
+body {
+  background-color: #d8d4d4;
+  font-family: "Poppins";
+}
+
+h1 {
+  margin-left: 24.5em;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  gap: 0 6em;
+  justify-content: center;
+}
+
 .main-container {
   display: grid;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   border: 3px solid rgb(129, 129, 129);
 }
 
-.single-div {
-  background-color: white;
-  border-top: 1px solid rgb(155, 154, 154);
-  border-bottom: 1px solid rgb(155, 154, 154);
+/* Rows */
 
+.single-div {
+  /* background-color: white; */
+  /* column div's on a row*/
   display: grid;
   grid-auto-flow: column;
 }
 
-.main-container > div:nth-child(odd) {
-  border-bottom: none;
-  border-top: none;
+/* Columns */
+
+.sub-div.toggle-btn {
+  background-color: white;
+  border-color: rgb(155, 154, 154, 0.3);
+  border-style: solid;
+  border-width: 1px;
 }
 
-.main-container > div:nth-last-child(1) {
-  border-bottom: none;
+.sub-div {
+  border: none;
+  background-color: white;
 }
 
-.main-container > div:first-child {
-  border-top: none;
+.tools-conatiner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em 0;
 }
 
-.single-div > div {
-  background-color: aqua;
-  border: 1px solid black;
+.color-picker > input {
+  margin: 0.7em;
+}
+
+/* Rainbow Button */
+
+.rainbowBtn {
+  color: black;
+  background-color: darkgray;
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.rainbowBtn.toggleBtn {
+  color: white;
+  background-color: rgb(0, 153, 255);
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* Erase Button */
+
+.eraserBtn {
+  color: black;
+  background-color: darkgray;
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.eraserBtn.toggleBtn {
+  color: white;
+  background-color: rgb(0, 153, 255);
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* Toggle Grid Lines */
+
+.gridlineBtn.toggleBtn {
+  color: white;
+  background-color: rgb(0, 153, 255);
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.gridlineBtn {
+  color: black;
+  background-color: darkgray;
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* Clear Button */
+
+.clear-btn {
+  color: black;
+  background-color: darkgray;
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
 }
